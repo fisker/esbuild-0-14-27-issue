@@ -1,0 +1,15 @@
+{
+  "name": "esbuild-outdent",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "0.14.27",
+    "outdent": "0.8.0"
+  },
+  "scripts": {
+    "pretest": "esbuild index.mjs --format=cjs --bundle --outfile=index.cjs",
+    "test": "node test.mjs && node test.cjs"
+  }
+}
